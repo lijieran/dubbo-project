@@ -11,5 +11,8 @@
   <modules>
   	<module>dubbo-demo-api</module>
     <module>dubbo-demo-consumer</module>
+    <module>dubbo-demo-provider</module>
   </modules>
+  
+  
 </project>
