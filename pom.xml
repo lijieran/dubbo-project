@@ -6,6 +6,7 @@
   <packaging>pom</packaging>
   <modules>
   	<module>dubbo-demo</module>
+  	<module>dubbo-chat</module>
   </modules>
   
   
