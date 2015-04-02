@@ -10,5 +10,14 @@
   <modules>
   	<module>dubbo-chat-api</module>
   	<module>dubbo-chat-service</module>
+  	<module>dubbo-chat-client</module>
   </modules>
+  
+  <dependencies>
+     <dependency>
+        <groupId>com.liyang</groupId>
+    	<artifactId>dubbo-common</artifactId>
+    	<version>${project.parent.version}</version>
+     </dependency>
+  </dependencies>
 </project>

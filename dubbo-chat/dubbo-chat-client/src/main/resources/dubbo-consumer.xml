@@ -6,14 +6,8 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd        
     http://code.alibabatech.com/schema/dubbo        
     http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
- 
-   
-    <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.liyang.dubbo.chat.api.ChatRoomService" ref="chatRoomService" />
- 
-    <!-- 和本地bean一样实现服务 -->
-    <bean id="chatRoomService" class="com.liyang.dubbo.chat.service.ChatRoomServiceImpl" >
-        <property name="jedisPool" ref="jedisPool"></property>
-    </bean>
     
+	
+	<!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
+	<dubbo:reference id="chatRoomService" interface="com.liyang.dubbo.chat.api.ChatRoomService" />
 </beans>

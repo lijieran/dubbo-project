@@ -17,8 +17,10 @@ public class RedisTest extends TestCase{
 		Jedis jedis = pool.getResource();
 		if(jedis.ping().equalsIgnoreCase("pong")) {
 			System.out.println("Reids连接成功...");
-			System.out.println(jedis.info());
 		}
+		
+		jedis.hset("chat::room::max::count::20150402", "10086", "5");
+		jedis.quit();
 	}
 	
 	
