@@ -9,5 +9,6 @@
         http://www.springframework.org/schema/context/spring-context.xsd
         ">
         
+    <import resource="applicationContext-redis.xml"></import>
 	<import resource="dubbo-provider.xml"></import>
 </beans>

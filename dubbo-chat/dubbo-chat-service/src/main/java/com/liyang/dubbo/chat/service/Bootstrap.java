@@ -15,7 +15,7 @@ public class Bootstrap {
 		context.start();
 		
 		//按任意键退出
-		System.in.read();
+		//System.in.read();
 	}
 
 }
