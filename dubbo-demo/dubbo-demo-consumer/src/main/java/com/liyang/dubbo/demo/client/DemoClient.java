@@ -11,6 +11,9 @@ public class DemoClient{
 		
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("dubbo-consumer.xml");
 		context.start();
+		
+		System.out.println("spring加载完成");
+		
 		DemoService demoService = (DemoService)context.getBean("demoService"); 
 	    String hello = demoService.sayHello("world"); 
 	    System.out.println(hello);
